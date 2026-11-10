@@ -1,0 +1,1651 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>رضوانه سادات خدادادیان | روان‌شناسی، شعر و نویسندگی</title>
+    <meta name="description" content="فضای شخصی رضوانه سادات خدادادیان؛ دانشجوی روان‌شناسی، شاعر و نویسنده." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600&family=Vazirmatn:wght@300;400;500;600;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="hark.css" />
+    <link rel="stylesheet" href="hark-hero.css" />
+    <style>
+      /* =========================================================
+         DESIGN TOKENS — edit colors and fonts here
+         ========================================================= */
+      :root {
+        --x-navy: #101d35;
+        --x-navy-2: #172744;
+        --x-navy-3: #0b1528;
+        --x-cream: #f3ebdd;
+        --x-beige: #e6dbc8;
+        --x-gold: #b89a5e;
+        --x-gold-light: #c9a96e;
+        --x-gold-dark: #765c2c; /* gold for text on cream (meets contrast) */
+        --x-ink: #101d35;
+        --x-ink-soft: #3d4a63;
+        --x-cream-soft: rgba(243, 235, 221, 0.78);
+        --x-line-dark: rgba(201, 169, 110, 0.35);
+        --x-line-light: rgba(16, 29, 53, 0.14);
+        /* Persian first, Latin fallbacks after */
+        --x-serif: "Noto Naskh Arabic", "Amiri", "Cormorant Garamond", Georgia, "Times New Roman", serif;
+        --x-sans: "Vazirmatn", "Manrope", "Inter", system-ui, -apple-system, "Segoe UI", Tahoma, sans-serif;
+        --x-nav-h: 68px;
+        --x-wrap: 1120px;
+        --x-pad: clamp(20px, 5vw, 48px);
+        --x-ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+        --x-shadow: 0 18px 40px -22px rgba(16, 29, 53, 0.45);
+        --x-radius: 18px;
+      }
+
+      html { scroll-behavior: smooth; scroll-padding-top: var(--x-nav-h); color-scheme: light; }
+      body {
+        background: var(--x-cream);
+        color: var(--x-ink);
+        font: 400 16px/1.9 var(--x-sans);
+        letter-spacing: 0;
+        text-align: start;
+      }
+      body.x-lock { overflow: hidden; }
+      ::selection { background: var(--x-gold-light); color: var(--x-navy); }
+      :focus-visible { outline: 2px solid var(--x-gold-light); outline-offset: 3px; border-radius: 4px; }
+
+      .x-skip {
+        position: absolute; inset-inline-start: 12px; top: -60px; z-index: 200;
+        background: var(--x-gold-light); color: var(--x-navy); padding: 10px 16px; border-radius: 8px;
+        text-decoration: none; font-weight: 600;
+      }
+      .x-skip:focus { top: 12px; }
+
+      .x-wrap { max-width: var(--x-wrap); margin: 0 auto; padding-inline: var(--x-pad); }
+      .x-section { padding-block: clamp(80px, 12vw, 140px); position: relative; }
+      .x-dark {
+        background:
+          radial-gradient(ellipse 80% 60% at 85% 0%, rgba(201, 169, 110, 0.12), transparent 60%),
+          radial-gradient(ellipse 70% 60% at 0% 100%, rgba(230, 219, 200, 0.06), transparent 60%),
+          var(--x-navy);
+        color: var(--x-cream);
+        isolation: isolate;
+      }
+      /* subtle film grain on navy sections */
+      .x-dark::before {
+        content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; opacity: 0.07;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      }
+      .x-light { background: var(--x-cream); color: var(--x-ink); }
+
+      /* Headings */
+      .x-h1, .x-h2, .x-h3 { font-family: var(--x-serif); font-weight: 500; letter-spacing: 0; line-height: 1.5; }
+      .x-h1 { font-size: clamp(2.3rem, 7.5vw, 4.4rem); line-height: 1.45; }
+      .x-h2 { font-size: clamp(2rem, 5.4vw, 3.2rem); }
+      .x-h3 { font-size: 1.5rem; line-height: 1.6; }
+      .x-h1 em, .x-h2 em { font-style: normal; color: var(--x-gold-light); }
+      .x-light .x-h2 em { color: var(--x-gold-dark); }
+
+      .x-eyebrow {
+        display: inline-flex; align-items: center; gap: 12px;
+        font: 500 14px/1.4 var(--x-sans);
+        color: var(--x-gold-light); margin-bottom: 22px;
+      }
+      .x-light .x-eyebrow { color: var(--x-gold-dark); }
+      .x-eyebrow::after { content: ""; width: 48px; height: 1px; background: currentColor; opacity: 0.7; }
+      .x-head { max-width: 680px; margin-bottom: clamp(48px, 7vw, 72px); }
+      .x-head p { margin-top: 20px; font-size: 1.05rem; }
+      .x-dark .x-head p { color: var(--x-cream-soft); }
+      .x-light .x-head p { color: var(--x-ink-soft); }
+
+      /* Ornament */
+      .x-ornament { display: flex; align-items: center; gap: 14px; color: var(--x-gold); margin: 0 0 28px; }
+      .x-ornament::before, .x-ornament::after { content: ""; height: 1px; flex: 0 0 56px; background: currentColor; opacity: 0.6; }
+      .x-ornament span { width: 6px; height: 6px; transform: rotate(45deg); border: 1px solid currentColor; }
+
+      /* Buttons */
+      .x-btn {
+        display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+        min-height: 50px; padding: 0 28px; border-radius: 999px;
+        font: 500 15px/1.2 var(--x-sans);
+        text-decoration: none; cursor: pointer; border: 1px solid var(--x-gold-light);
+        transition: transform 0.35s var(--x-ease), box-shadow 0.35s var(--x-ease), background-color 0.35s var(--x-ease), color 0.35s var(--x-ease);
+      }
+      .x-btn--fill { background: var(--x-gold-light); color: var(--x-navy); }
+      .x-btn--fill:hover { background: var(--x-cream); border-color: var(--x-cream); transform: translateY(-2px); box-shadow: 0 14px 30px -14px rgba(201, 169, 110, 0.7); }
+      .x-btn--ghost { background: transparent; color: var(--x-cream); }
+      .x-btn--ghost:hover { background: rgba(201, 169, 110, 0.12); transform: translateY(-2px); }
+      .x-light .x-btn--fill { background: var(--x-navy); border-color: var(--x-navy); color: var(--x-cream); }
+      .x-light .x-btn--fill:hover { background: var(--x-navy-2); box-shadow: var(--x-shadow); }
+      .x-btn--small { min-height: 48px; padding: 0 20px; font-size: 14px; }
+      .x-btn svg { width: 16px; height: 16px; }
+      /* arrows that imply direction point the RTL way */
+      .x-flip { transform: scaleX(-1); }
+
+      /* Text link with thin gold underline (grows from the right in RTL) */
+      .x-link {
+        color: inherit; text-decoration: none; position: relative;
+        background: linear-gradient(var(--x-gold-light), var(--x-gold-light)) right bottom / 0 1px no-repeat;
+        transition: background-size 0.4s var(--x-ease), color 0.3s;
+        padding-bottom: 2px;
+      }
+      .x-link:hover, .x-link:focus-visible { background-size: 100% 1px; }
+
+      /* ============ NAV ============ */
+      .x-nav {
+        position: fixed; inset: 0 0 auto 0; z-index: 100; height: var(--x-nav-h);
+        border-bottom: 1px solid transparent; color: var(--x-cream);
+        transition: background-color 0.4s var(--x-ease), border-color 0.4s var(--x-ease), backdrop-filter 0.4s;
+        background-color: var(--x-navy);
+      }
+      .x-nav.is-scrolled {
+        background: rgba(16, 29, 53, 0.82);
+        -webkit-backdrop-filter: blur(14px) saturate(140%); backdrop-filter: blur(14px) saturate(140%);
+        border-bottom-color: var(--x-line-dark);
+      }
+      .x-nav__in { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+      .x-brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; min-height: 44px; }
+      /* Monogram «ر.خ» — Naskh letters inside a thin muted-gold arch */
+      .x-mono {
+        position: relative; flex: none;
+        width: 40px; height: 46px; border-radius: 999px 999px 6px 6px; border: 1px solid var(--x-gold-light);
+        display: grid; place-items: center; padding-top: 4px;
+        font: 500 1.05rem/1 var(--x-serif); color: var(--x-gold-light); letter-spacing: 0; white-space: nowrap;
+      }
+      .x-mono::before {
+        content: ""; position: absolute; inset: 3px; border-radius: inherit; border: 1px solid var(--x-gold-light); opacity: 0.35;
+      }
+      .x-brand__name { font: 500 1.15rem/1.4 var(--x-serif); }
+      .x-menu { display: flex; gap: clamp(16px, 2.4vw, 32px); list-style: none; margin: 0; padding: 0; }
+      .x-menu a {
+        font: 500 15px/1 var(--x-sans); color: var(--x-cream-soft);
+        text-decoration: none; display: inline-flex; align-items: center; min-height: 44px; position: relative; transition: color 0.3s;
+      }
+      .x-menu a::after {
+        content: ""; position: absolute; inset-inline: 0; bottom: 8px; height: 1px; background: var(--x-gold-light);
+        transform: scaleX(0); transform-origin: right; transition: transform 0.4s var(--x-ease);
+      }
+      .x-menu a:hover, .x-menu a.is-active { color: var(--x-cream); }
+      .x-menu a:hover::after, .x-menu a.is-active::after { transform: scaleX(1); }
+      .x-burger {
+        display: none; width: 44px; height: 44px; border: 0; background: transparent; cursor: pointer; position: relative; z-index: 120; color: var(--x-cream);
+      }
+      .x-burger span { position: absolute; inset-inline: 11px; height: 1px; background: currentColor; transition: transform 0.4s var(--x-ease), opacity 0.3s; }
+      .x-burger span:nth-child(1) { top: 16px; }
+      .x-burger span:nth-child(2) { top: 22px; inset-inline-end: 17px; }
+      .x-burger span:nth-child(3) { top: 28px; }
+      .x-burger[aria-expanded="true"] span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+      .x-burger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+      .x-burger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+      @media (max-width: 859px) {
+        .x-burger { display: block; }
+        .x-menu {
+          position: fixed; inset: 0; z-index: 110; flex-direction: column; justify-content: center; align-items: center; gap: 6px;
+          background: radial-gradient(ellipse at 50% 0%, rgba(201, 169, 110, 0.14), transparent 60%), var(--x-navy-3);
+          opacity: 0; visibility: hidden; transition: opacity 0.45s var(--x-ease), visibility 0.45s;
+        }
+        .x-menu.is-open { opacity: 1; visibility: visible; }
+        .x-menu li { opacity: 0; transform: translateY(14px); transition: opacity 0.5s var(--x-ease), transform 0.5s var(--x-ease); }
+        .x-menu.is-open li { opacity: 1; transform: none; }
+        .x-menu.is-open li:nth-child(2) { transition-delay: 0.05s; }
+        .x-menu.is-open li:nth-child(3) { transition-delay: 0.1s; }
+        .x-menu.is-open li:nth-child(4) { transition-delay: 0.15s; }
+        .x-menu.is-open li:nth-child(5) { transition-delay: 0.2s; }
+        .x-menu.is-open li:nth-child(6) { transition-delay: 0.25s; }
+        .x-menu.is-open li:nth-child(7) { transition-delay: 0.3s; }
+        .x-menu a { font: 400 2rem/1.4 var(--x-serif); min-height: 64px; min-width: 120px; justify-content: center; }
+        .x-menu a::after { bottom: 12px; }
+      }
+
+      /* ============ HERO ============ */
+      .x-hero { min-height: 100svh; display: flex; align-items: center; padding-top: calc(var(--x-nav-h) + 40px); padding-bottom: 96px; }
+      .x-hero__grid { display: grid; gap: 56px; align-items: center; width: 100%; }
+      .x-hero__copy p.x-lead { font-size: clamp(1.05rem, 2.4vw, 1.25rem); color: var(--x-cream-soft); max-width: 520px; margin-top: 24px; }
+      .x-hero__actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 40px; }
+      .x-portrait { justify-self: center; position: relative; width: min(72vw, 340px); aspect-ratio: 4 / 5; }
+      .x-portrait__ring {
+        position: absolute; inset: -14px; border: 1px solid var(--x-gold-light); border-radius: 999px 999px 24px 24px; opacity: 0.6;
+      }
+      .x-portrait__frame {
+        position: absolute; inset: 0; border-radius: 999px 999px 18px 18px; overflow: hidden;
+        background: radial-gradient(circle at 50% 30%, rgba(201, 169, 110, 0.25), transparent 65%), linear-gradient(160deg, var(--x-navy-2), var(--x-navy-3));
+        border: 1px solid rgba(201, 169, 110, 0.5); display: grid; place-items: center;
+      }
+      .x-portrait__frame img { width: 100%; height: 100%; object-fit: cover; }
+      .x-portrait__ph { text-align: center; color: var(--x-gold-light); display: grid; justify-items: center; }
+      /* the large monogram: Naskh letters in a thin gold arch with a faint second ring */
+      .x-portrait__ph b {
+        position: relative; display: grid; place-items: center; width: 132px; height: 156px; padding-top: 14px;
+        border: 1px solid var(--x-gold-light); border-radius: 999px 999px 14px 14px;
+        font: 500 3.1rem/1 var(--x-serif); white-space: nowrap;
+      }
+      .x-portrait__ph b::before {
+        content: ""; position: absolute; inset: -9px; border-radius: 999px 999px 20px 20px; border: 1px solid var(--x-gold-light); opacity: 0.3;
+      }
+      .x-portrait__ph small { display: block; margin-top: 26px; font: 400 13px/1.4 var(--x-sans); color: var(--x-cream-soft); }
+      .x-portrait__star { position: absolute; inset-inline-end: -6px; top: 18%; width: 28px; color: var(--x-gold-light); animation: x-spin 18s linear infinite; }
+      .x-scroll {
+        position: absolute; left: 50%; bottom: 28px; transform: translateX(-50%);
+        display: flex; flex-direction: column; align-items: center; gap: 10px; color: var(--x-cream-soft); text-decoration: none;
+        font: 400 13px/1 var(--x-sans); min-height: 44px; min-width: 64px;
+      }
+      .x-scroll i { width: 1px; height: 44px; background: rgba(201, 169, 110, 0.3); position: relative; overflow: hidden; }
+      .x-scroll i::after { content: ""; position: absolute; left: 0; top: -40%; width: 1px; height: 40%; background: var(--x-gold-light); animation: x-drop 2.2s var(--x-ease) infinite; }
+      @keyframes x-drop { to { top: 100%; } }
+      @keyframes x-spin { to { transform: rotate(360deg); } }
+      @media (min-width: 860px) {
+        .x-hero__grid { grid-template-columns: 1.25fr 1fr; gap: 72px; }
+        .x-portrait { width: 360px; }
+      }
+
+      /* ============ ABOUT ============ */
+      .x-about__grid { display: grid; gap: 48px; }
+      /* faint paper texture and warm vignette on the cream About section */
+      .x-paper { isolation: isolate; }
+      .x-paper::before {
+        content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; opacity: 0.09; mix-blend-mode: multiply;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='p'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.55' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .36 0 0 0 0 .2 0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23p)'/%3E%3C/svg%3E");
+      }
+      .x-paper::after {
+        content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+        background: radial-gradient(ellipse 70% 55% at 50% 40%, transparent 55%, rgba(184, 154, 94, 0.12));
+      }
+      /* the literary bio passage */
+      .x-verse { position: relative; margin: 0; max-width: 900px; padding-block: 12px 4px; }
+      .x-verse::before {
+        content: "«"; position: absolute; inset-inline-start: -8px; top: -0.45em; z-index: -1;
+        font: 400 clamp(7rem, 16vw, 11rem)/1 var(--x-serif); color: var(--x-gold); opacity: 0.16; pointer-events: none;
+      }
+      .x-verse p {
+        font: 400 clamp(1.5rem, 3.6vw, 2.35rem)/2 var(--x-serif); color: var(--x-ink); text-wrap: pretty;
+      }
+      .x-qm { color: var(--x-gold-dark); font-weight: 600; }
+      /* thin gold ink-line flourish that draws itself on reveal */
+      .x-flourish { display: block; width: min(260px, 70%); height: 28px; margin: 36px 0 0; color: var(--x-gold); overflow: visible; }
+      .x-flourish path { fill: none; stroke: currentColor; stroke-width: 1; stroke-linecap: round; stroke-dasharray: 320; stroke-dashoffset: 320; transition: stroke-dashoffset 1.8s var(--x-ease) 0.2s; }
+      .x-flourish .x-flourish__gem { stroke-dasharray: 40; stroke-dashoffset: 40; transition-delay: 1.2s; transition-duration: 0.8s; }
+      .x-flourish.is-in path { stroke-dashoffset: 0; }
+      .x-blocks { display: grid; gap: 18px; }
+      .x-fact__val { font: 500 1.3rem/1.7 var(--x-serif); color: var(--x-ink); }
+      @media (min-width: 760px) { .x-blocks { grid-template-columns: repeat(3, 1fr); } }
+      .x-card {
+        background: rgba(255, 255, 255, 0.45); border: 1px solid var(--x-line-light); border-radius: var(--x-radius);
+        padding: 28px; transition: transform 0.45s var(--x-ease), box-shadow 0.45s var(--x-ease), border-color 0.45s;
+      }
+      .x-card:hover { transform: translateY(-4px); box-shadow: var(--x-shadow); border-color: rgba(184, 154, 94, 0.6); }
+      .x-card__label { font: 500 13px/1.4 var(--x-sans); color: var(--x-gold-dark); margin-bottom: 10px; }
+      .x-card p { color: var(--x-ink-soft); }
+      .x-tags { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 0; padding: 0; }
+      .x-tag {
+        font: 500 13px/1.5 var(--x-sans); padding: 5px 14px; border-radius: 999px; border: 1px solid rgba(184, 154, 94, 0.55); color: var(--x-ink);
+        background: rgba(230, 219, 200, 0.5);
+      }
+      .x-dark .x-tag { color: var(--x-cream); background: #1f2b44; border-color: var(--x-line-dark); }
+
+      /* ============ EDUCATION TIMELINE (mirrored for RTL with logical properties) ============ */
+      .x-tl { list-style: none; margin: 0; padding: 0; position: relative; }
+      .x-tl::before { content: ""; position: absolute; inset-inline-start: 7px; top: 6px; bottom: 6px; width: 1px; background: linear-gradient(var(--x-gold-light), rgba(201, 169, 110, 0.15)); }
+      .x-tl__item { position: relative; padding-inline-start: 44px; padding-bottom: 48px; }
+      .x-tl__item:last-child { padding-bottom: 0; }
+      .x-tl__dot { position: absolute; inset-inline-start: 0; top: 6px; width: 15px; height: 15px; border-radius: 50%; border: 1px solid var(--x-gold-light); background: var(--x-navy); }
+      .x-tl__dot::after { content: ""; position: absolute; inset: 3px; border-radius: 50%; background: var(--x-gold-light); }
+      .x-tl__card {
+        background: #16243f; border: 1px solid var(--x-line-dark); border-radius: var(--x-radius); padding: 28px;
+        transition: transform 0.45s var(--x-ease), background-color 0.45s, border-color 0.45s;
+      }
+      .x-tl__card:hover { transform: translateY(-4px); background: #1a2a47; border-color: var(--x-gold-light); }
+      .x-tl__when { font: 500 14px/1.5 var(--x-sans); color: var(--x-gold-light); }
+      .x-tl__card h3 { margin-top: 10px; }
+      .x-tl__deg { margin-top: 4px; color: var(--x-cream); font-weight: 500; }
+      .x-tl__note { margin-top: 10px; color: var(--x-cream-soft); font-size: 0.95rem; }
+      @media (min-width: 860px) {
+        .x-tl::before { inset-inline-start: 50%; }
+        .x-tl__item { width: 50%; padding-inline-start: 0; padding-inline-end: 56px; }
+        .x-tl__item:nth-child(even) { margin-inline-start: 50%; padding-inline-end: 0; padding-inline-start: 56px; }
+        .x-tl__dot { inset-inline-start: auto; inset-inline-end: -7px; }
+        .x-tl__item:nth-child(even) .x-tl__dot { inset-inline-end: auto; inset-inline-start: -8px; }
+        .x-tl__item:nth-child(odd) .x-tl__card { text-align: end; }
+      }
+
+      /* ============ SKILLS ============ */
+      .x-skills { display: grid; gap: 18px; grid-template-columns: 1fr; }
+      .x-skill__icon {
+        width: 52px; height: 52px; border-radius: 50%; display: grid; place-items: center; margin-bottom: 22px;
+        border: 1px solid rgba(184, 154, 94, 0.6); color: var(--x-gold-dark); background: rgba(230, 219, 200, 0.6);
+      }
+      .x-skill__icon svg { width: 24px; height: 24px; }
+      .x-skill h3 { margin-bottom: 8px; }
+      /* decorative gold line that draws from the right on reveal (no levels) */
+      .x-inkline { display: block; margin-top: 26px; height: 1px; width: 100%; transform: scaleX(0); transform-origin: right;
+        background: linear-gradient(to left, var(--x-gold), rgba(184, 154, 94, 0)); transition: transform 1.4s var(--x-ease) 0.3s; }
+      .is-in .x-inkline { transform: scaleX(1); }
+      @media (min-width: 640px) { .x-skills { grid-template-columns: repeat(2, 1fr); } }
+      @media (min-width: 1000px) { .x-skills { grid-template-columns: repeat(3, 1fr); } }
+
+      /* ============ PROJECTS ============ */
+      .x-filters { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 40px; }
+      .x-filter {
+        min-height: 44px; padding: 0 20px; border-radius: 999px; cursor: pointer;
+        border: 1px solid var(--x-line-dark); background: transparent; color: var(--x-cream-soft);
+        font: 500 14px/1 var(--x-sans); transition: all 0.35s var(--x-ease);
+      }
+      .x-filter:hover { color: var(--x-cream); border-color: var(--x-gold-light); }
+      .x-filter[aria-pressed="true"] { background: var(--x-gold-light); color: var(--x-navy); border-color: var(--x-gold-light); }
+      .x-grid { display: grid; gap: 22px; grid-template-columns: 1fr; }
+      @media (min-width: 640px) { .x-grid { grid-template-columns: repeat(2, 1fr); } }
+      @media (min-width: 1000px) { .x-grid { grid-template-columns: repeat(3, 1fr); } }
+      .x-proj {
+        display: flex; flex-direction: column; border-radius: var(--x-radius); overflow: hidden;
+        background: #16243f; border: 1px solid var(--x-line-dark);
+        transition: transform 0.45s var(--x-ease), box-shadow 0.45s var(--x-ease), border-color 0.45s, opacity 0.4s;
+      }
+      .x-proj:hover { transform: translateY(-6px); box-shadow: 0 26px 50px -26px rgba(0, 0, 0, 0.7); border-color: var(--x-gold-light); }
+      .x-proj[hidden] { display: none; }
+      .x-proj.is-entering { animation: x-pop 0.5s var(--x-ease) both; }
+      @keyframes x-pop { from { opacity: 0; transform: translateY(16px) scale(0.98); } }
+      .x-proj__media { aspect-ratio: 16 / 10; display: grid; place-items: center; position: relative; overflow: hidden; }
+      .x-proj__media svg { width: 56px; height: 56px; color: var(--x-cream); opacity: 0.9; transition: transform 0.6s var(--x-ease); }
+      .x-proj:hover .x-proj__media svg { transform: scale(1.08); }
+      .x-proj__media::after { content: ""; position: absolute; inset: 14px; border: 1px solid rgba(243, 235, 221, 0.25); border-radius: 10px; pointer-events: none; }
+      .x-g1 { background: radial-gradient(circle at 25% 20%, rgba(201,169,110,.55), transparent 55%), linear-gradient(135deg, #1d2f52, #0b1528); }
+      .x-g2 { background: radial-gradient(circle at 80% 30%, rgba(230,219,200,.35), transparent 55%), linear-gradient(160deg, #2a3a5c, #101d35); }
+      .x-g3 { background: radial-gradient(circle at 30% 80%, rgba(184,154,94,.6), transparent 60%), linear-gradient(120deg, #101d35, #24365a); }
+      .x-g4 { background: linear-gradient(140deg, rgba(201,169,110,.85), rgba(16,29,53,.95) 70%); }
+      .x-g5 { background: radial-gradient(circle at 70% 70%, rgba(201,169,110,.45), transparent 55%), linear-gradient(200deg, #3a4865, #101d35); }
+      .x-g6 { background: conic-gradient(from 210deg at 60% 40%, #101d35, #b89a5e, #e6dbc8, #24365a, #101d35); }
+      .x-proj__body { padding: 24px; display: flex; flex-direction: column; gap: 12px; flex: 1; }
+      .x-proj__cat { font: 500 13px/1.4 var(--x-sans); color: var(--x-gold-light); }
+      .x-proj__body h3 { font-size: 1.45rem; }
+      .x-proj__body p { color: var(--x-cream-soft); font-size: 0.95rem; }
+      .x-proj__body .x-tags { margin-top: 4px; }
+      .x-proj__body .x-tag { font-size: 12px; padding: 4px 12px; }
+      .x-proj__foot { margin-top: auto; padding-top: 12px; }
+
+      /* ============ POETRY — «جهانِ واژه‌ها» ============ */
+      .x-poetry {
+        --x-p-bg: #0b1428; --x-p-gold: #c5a56a; --x-p-line: rgba(197, 165, 106, 0.38);
+        background: radial-gradient(ellipse 60% 45% at 50% 16%, rgba(197, 165, 106, 0.17), transparent 70%), var(--x-p-bg);
+        color: var(--x-cream); isolation: isolate; overflow: hidden;
+      }
+      .x-poetry::before {
+        content: ""; position: absolute; inset: 0; z-index: -2; pointer-events: none; opacity: 0.06;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      }
+      .x-poetry::after { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; background: radial-gradient(ellipse 85% 75% at 50% 45%, transparent 55%, rgba(0, 0, 0, 0.45)); }
+      .x-poetry .x-head { margin-inline: auto; text-align: center; }
+      .x-poetry .x-eyebrow { color: var(--x-p-gold); }
+      .x-poetry .x-h2 { color: var(--x-cream); }
+      .x-poetry .x-head p { color: var(--x-cream-soft); font: 400 1.3rem/1.9 var(--x-serif); }
+      .x-porn { display: block; width: 220px; height: 24px; margin: 30px auto 0; color: var(--x-p-gold); }
+      .x-porn path, .x-porn circle { fill: none; stroke: currentColor; stroke-width: 1; }
+      .x-dust { position: absolute; inset: 0; z-index: -1; pointer-events: none; overflow: hidden; }
+      .x-dust i {
+        position: absolute; width: 3px; height: 3px; border-radius: 50%; background: var(--x-p-gold); opacity: 0;
+        box-shadow: 0 0 6px 1px rgba(197, 165, 106, 0.55); animation: x-dust linear infinite;
+      }
+      @keyframes x-dust {
+        0% { transform: translate(0, 0); opacity: 0; }
+        20% { opacity: 0.6; }
+        80% { opacity: 0.45; }
+        100% { transform: translate(var(--dx, 20px), -180px); opacity: 0; }
+      }
+      .x-pchips { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 40px; }
+      .x-pchips[hidden] { display: none; }
+      .x-pchip {
+        min-height: 44px; padding: 0 20px; border-radius: 999px; cursor: pointer; border: 1px solid var(--x-p-line);
+        background: transparent; color: var(--x-cream-soft); font: 500 14px/1 var(--x-sans); transition: all 0.35s var(--x-ease);
+      }
+      .x-pchip:hover { color: var(--x-cream); border-color: var(--x-p-gold); }
+      .x-pchip[aria-pressed="true"] { background: var(--x-p-gold); border-color: var(--x-p-gold); color: var(--x-p-bg); }
+      .x-pgrid { display: grid; gap: 22px; grid-template-columns: 1fr; }
+      .x-pgrid[hidden] { display: none; }
+      @media (min-width: 640px) { .x-pgrid { grid-template-columns: repeat(2, 1fr); } }
+      @media (min-width: 1000px) { .x-pgrid { grid-template-columns: repeat(3, 1fr); } }
+      .x-pcard {
+        position: relative; display: flex; flex-direction: column; gap: 14px; padding: 30px 28px 26px;
+        border-radius: var(--x-radius); border: 1px solid var(--x-p-line); color: var(--x-cream); text-decoration: none;
+        background: linear-gradient(180deg, rgba(243, 235, 221, 0.05), rgba(243, 235, 221, 0.015));
+        transition: transform 0.45s var(--x-ease), box-shadow 0.45s var(--x-ease), border-color 0.45s;
+        animation: x-pop 0.6s var(--x-ease) both;
+      }
+      .x-pcard::before { content: ""; position: absolute; inset: 6px; border: 1px solid rgba(197, 165, 106, 0.13); border-radius: 13px; pointer-events: none; }
+      .x-pcard:hover, .x-pcard:focus-visible {
+        transform: translateY(-6px); border-color: var(--x-p-gold);
+        box-shadow: 0 24px 50px -28px rgba(0, 0, 0, 0.8), 0 0 42px -12px rgba(197, 165, 106, 0.4);
+      }
+      .x-pcard__top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px; font: 500 13px/1.5 var(--x-sans); color: var(--x-cream-soft); min-height: 26px; }
+      .x-pcard__cat { color: var(--x-p-gold); border: 1px solid var(--x-p-line); border-radius: 999px; padding: 2px 12px; }
+      .x-pcard h3 { font: 500 1.5rem/1.6 var(--x-serif); }
+      .x-pcard__ex { font: 400 1.12rem/2 var(--x-serif); color: var(--x-cream-soft); white-space: pre-wrap; }
+      .x-pcard__more { margin-top: auto; padding-top: 6px; font: 500 14px/1.4 var(--x-sans); color: var(--x-p-gold); }
+      .x-pempty {
+        max-width: 560px; margin: 0 auto; padding: 48px 28px; text-align: center; border: 1px dashed var(--x-p-line);
+        border-radius: var(--x-radius); font: 400 1.3rem/1.9 var(--x-serif); color: var(--x-cream-soft);
+      }
+      .x-pempty[hidden] { display: none; }
+
+      /* poems manager */
+      .x-pm { margin-top: 56px; border: 1px solid rgba(197, 165, 106, 0.28); border-radius: var(--x-radius); background: #111a2e; }
+      .x-pm > summary {
+        display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 56px; padding: 0 24px;
+        cursor: pointer; list-style: none; font: 500 15px/1.4 var(--x-sans); color: var(--x-p-gold);
+      }
+      .x-pm > summary::-webkit-details-marker { display: none; }
+      .x-pm > summary::after { content: "+"; font-size: 22px; line-height: 1; transition: transform 0.35s var(--x-ease); }
+      .x-pm[open] > summary::after { transform: rotate(45deg); }
+      .x-pm__body { display: grid; gap: 28px; padding: 4px 24px 28px; }
+      .x-pm__note { font-size: 13px; line-height: 1.9; color: var(--x-cream-soft); border-inline-start: 2px solid var(--x-p-gold); padding-inline-start: 12px; }
+      .x-pm form { display: grid; gap: 18px; }
+      .x-poetry .x-field label { color: var(--x-cream-soft); }
+      .x-poetry .x-field input, .x-poetry .x-field textarea { color: var(--x-cream); border-bottom-color: rgba(243, 235, 221, 0.3); }
+      .x-poetry .x-field input:focus, .x-poetry .x-field textarea:focus { border-bottom-color: var(--x-p-gold); box-shadow: 0 1px 0 0 var(--x-p-gold); }
+      .x-poetry .x-field textarea { font: 400 1.1rem/2 var(--x-serif); min-height: 200px; }
+      .x-poetry .x-err { color: #f0a796; }
+      .x-poetry .x-field.has-error input, .x-poetry .x-field.has-error textarea { border-bottom-color: #f0a796; }
+      .x-pm__actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+      .x-pm__btn {
+        min-height: 44px; padding: 0 18px; border-radius: 999px; cursor: pointer; border: 1px solid var(--x-p-line);
+        background: transparent; color: var(--x-cream); font: 500 14px/1 var(--x-sans); transition: border-color 0.3s, background-color 0.3s;
+      }
+      .x-pm__btn:hover { border-color: var(--x-p-gold); background: rgba(197, 165, 106, 0.1); }
+      .x-pm__btn[data-confirm] { border-color: #f0a796; color: #f0a796; }
+      .x-pm__btn[hidden] { display: none; }
+      .x-pm__list { list-style: none; margin: 0; padding: 0; border-top: 1px solid rgba(197, 165, 106, 0.2); }
+      .x-pm__list li { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 0; border-bottom: 1px solid rgba(197, 165, 106, 0.2); }
+      .x-pm__list b { font: 500 1.1rem/1.6 var(--x-serif); }
+      .x-pm__list small { display: block; color: var(--x-cream-soft); font-size: 13px; }
+      .x-pm__list span.x-pm__row { display: flex; gap: 8px; }
+      .x-pm__export[hidden] { display: none; }
+      .x-pm__export textarea {
+        width: 100%; min-height: 220px; margin-top: 10px; padding: 14px; border-radius: 12px; resize: vertical;
+        font: 400 13px/1.6 "Geist Mono", ui-monospace, monospace; color: var(--x-cream); background: rgba(0, 0, 0, 0.28); border: 1px solid rgba(197, 165, 106, 0.25);
+      }
+
+      /* reading view */
+      .x-reader {
+        position: fixed; inset: 0; z-index: 170; overflow-y: auto; overscroll-behavior: contain; color: var(--x-cream);
+        background: radial-gradient(ellipse 70% 45% at 50% 0%, rgba(197, 165, 106, 0.16), transparent 70%), #0b1428;
+        animation: x-rin 0.5s var(--x-ease) both;
+      }
+      .x-reader[hidden] { display: none; }
+      @keyframes x-rin { from { opacity: 0; } }
+      .x-reader__bar {
+        position: sticky; top: 0; z-index: 1; display: flex; align-items: center; justify-content: space-between; gap: 12px;
+        padding: 12px var(--x-pad); background: rgba(11, 20, 40, 0.86); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(197, 165, 106, 0.2);
+      }
+      .x-reader__count { font: 500 14px/1 var(--x-sans); color: var(--x-cream-soft); }
+      .x-reader__page { max-width: 780px; margin: 0 auto; padding: clamp(48px, 9vw, 96px) var(--x-pad) 56px; text-align: center; }
+      .x-reader__meta { font: 500 14px/1.6 var(--x-sans); color: #c5a56a; }
+      .x-reader__page h2 { margin-top: 12px; font: 500 clamp(2rem, 5.5vw, 3.1rem)/1.5 var(--x-serif); }
+      .x-reader__page .x-porn { margin: 26px auto 44px; }
+      .x-reader__text { font: 400 clamp(1.35rem, 3.4vw, 1.8rem)/2.25 "Noto Naskh Arabic", var(--x-serif); white-space: pre-wrap; overflow-wrap: anywhere; }
+      .x-reader__nav { max-width: 780px; margin: 0 auto; padding: 28px var(--x-pad) 72px; display: flex; justify-content: space-between; gap: 12px; border-top: 1px solid rgba(197, 165, 106, 0.2); }
+      .x-reader__nav[hidden] { display: none; }
+      .x-reader .x-btn[disabled] { opacity: 0.35; cursor: default; transform: none; background: transparent; }
+      body.x-reading .x-nav { visibility: hidden; }
+
+      /* Modal */
+      .x-modal {
+        position: fixed; inset: 0; z-index: 150; display: grid; place-items: center; padding: 20px;
+        background: rgba(7, 13, 26, 0.72); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+        opacity: 0; visibility: hidden; transition: opacity 0.4s var(--x-ease), visibility 0.4s;
+      }
+      .x-modal.is-open { opacity: 1; visibility: visible; }
+      .x-modal__box {
+        position: relative; width: min(640px, 100%); max-height: calc(100svh - 40px); overflow: auto;
+        background: var(--x-cream); color: var(--x-ink); border-radius: 22px; box-shadow: 0 40px 80px -30px rgba(0, 0, 0, 0.7);
+        transform: translateY(24px) scale(0.98); transition: transform 0.45s var(--x-ease);
+      }
+      .x-modal.is-open .x-modal__box { transform: none; }
+      .x-modal__media { aspect-ratio: 16 / 7; display: grid; place-items: center; position: relative; }
+      .x-modal__media svg { width: 60px; height: 60px; color: var(--x-cream); }
+      .x-modal__body { padding: 28px clamp(22px, 5vw, 40px) 36px; }
+      .x-modal__body .x-proj__cat { color: var(--x-gold-dark); }
+      .x-modal__body h3 { font-size: clamp(1.8rem, 5vw, 2.3rem); margin: 10px 0 16px; }
+      .x-modal__body p { color: var(--x-ink-soft); }
+      .x-modal__body .x-tags { margin: 20px 0 28px; }
+      .x-modal__links { display: flex; flex-wrap: wrap; gap: 12px; }
+      .x-modal__links .x-btn--ghost { color: var(--x-navy); border-color: var(--x-navy); }
+      .x-modal__links .x-btn--ghost:hover { background: rgba(16, 29, 53, 0.06); }
+      .x-close {
+        position: absolute; top: 14px; inset-inline-end: 14px; z-index: 2; width: 48px; height: 48px; border-radius: 50%; cursor: pointer;
+        background: #f3ebdd; border: 1px solid rgba(16, 29, 53, 0.15); color: var(--x-navy);
+        display: grid; place-items: center; transition: transform 0.35s var(--x-ease);
+      }
+      .x-close:hover { transform: rotate(90deg); }
+      .x-close svg { width: 18px; height: 18px; }
+
+      /* ============ CONTACT ============ */
+      .x-contact__grid { display: grid; gap: 56px; }
+      .x-contact__info p { color: var(--x-ink-soft); }
+      .x-email { display: inline-flex; align-items: center; min-height: 48px; margin-top: 18px; font: 500 clamp(1.3rem, 4.2vw, 1.9rem)/1.3 "Cormorant Garamond", Georgia, serif; color: var(--x-ink); word-break: break-word; }
+      .x-email.x-link { background-image: linear-gradient(var(--x-gold), var(--x-gold)); background-size: 100% 1px; }
+      .x-email.x-link:hover { color: var(--x-gold-dark); }
+      .x-socials { display: flex; gap: 12px; list-style: none; padding: 0; margin: 32px 0 0; }
+      .x-social {
+        width: 46px; height: 46px; border-radius: 50%; display: grid; place-items: center; color: inherit;
+        border: 1px solid rgba(184, 154, 94, 0.6); transition: transform 0.35s var(--x-ease), background-color 0.35s, color 0.35s;
+      }
+      .x-social svg { width: 18px; height: 18px; }
+      .x-social:hover { transform: translateY(-3px); background: var(--x-navy); color: var(--x-cream); border-color: var(--x-navy); }
+      .x-dark .x-social:hover { background: var(--x-gold-light); color: var(--x-navy); border-color: var(--x-gold-light); }
+      .x-form { display: grid; gap: 22px; background: rgba(255, 255, 255, 0.45); border: 1px solid var(--x-line-light); border-radius: 22px; padding: clamp(24px, 5vw, 40px); }
+      .x-row { display: grid; gap: 22px; }
+      @media (min-width: 640px) { .x-row { grid-template-columns: 1fr 1fr; } }
+      .x-field label { display: block; font: 500 14px/1.4 var(--x-sans); color: var(--x-ink-soft); margin-bottom: 6px; }
+      .x-field input[dir="ltr"] { text-align: right; }
+      .x-field input, .x-field textarea {
+        width: 100%; font: 400 16px/1.5 var(--x-sans); color: var(--x-ink); background: transparent;
+        border: 0; border-bottom: 1px solid rgba(16, 29, 53, 0.3); border-radius: 0; padding: 10px 0; min-height: 44px;
+        transition: border-color 0.3s;
+      }
+      .x-field textarea { resize: vertical; min-height: 120px; }
+      .x-field input:focus, .x-field textarea:focus { outline: none; border-bottom-color: var(--x-gold); box-shadow: 0 1px 0 0 var(--x-gold); }
+      .x-field.has-error input, .x-field.has-error textarea { border-bottom-color: #9b3b2f; }
+      .x-err { display: block; min-height: 1.4em; margin-top: 6px; font-size: 13px; color: #9b3b2f; }
+      .x-success {
+        display: none; gap: 12px; align-items: flex-start; padding: 18px 20px; border-radius: 14px;
+        background: rgba(184, 154, 94, 0.14); border: 1px solid rgba(184, 154, 94, 0.5); color: var(--x-ink);
+      }
+      .x-success.is-shown { display: flex; animation: x-pop 0.5s var(--x-ease) both; }
+      .x-success svg { width: 22px; height: 22px; flex: none; color: var(--x-gold-dark); margin-top: 2px; }
+      @media (min-width: 860px) { .x-contact__grid { grid-template-columns: 1fr 1.3fr; gap: 80px; } }
+
+      /* ============ FOOTER ============ */
+      .x-foot { padding-block: 72px 36px; }
+      .x-foot__top { display: grid; gap: 36px; padding-bottom: 40px; border-bottom: 1px solid var(--x-line-dark); }
+      .x-foot__tag { margin-top: 16px; color: var(--x-gold-light); font: 400 1.2rem/1.6 var(--x-serif); }
+      .x-foot__nav { display: flex; flex-wrap: wrap; gap: 4px 24px; list-style: none; margin: 0; padding: 0; }
+      .x-foot__nav a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; min-width: 48px; color: var(--x-cream-soft); font-size: 14px; }
+      .x-foot__nav a:hover { color: var(--x-cream); }
+      .x-foot .x-socials { margin: 0; }
+      .x-foot .x-social { border-color: var(--x-line-dark); }
+      .x-foot__bottom { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding-top: 28px; color: var(--x-cream-soft); font-size: 13px; }
+      .x-top {
+        display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 18px; border-radius: 999px; cursor: pointer;
+        border: 1px solid var(--x-line-dark); background: transparent; color: var(--x-cream); font: 500 14px/1 var(--x-sans);
+        transition: border-color 0.3s, transform 0.35s var(--x-ease);
+      }
+      .x-top:hover { border-color: var(--x-gold-light); transform: translateY(-2px); }
+      .x-top svg { width: 14px; height: 14px; }
+      @media (min-width: 860px) { .x-foot__top { grid-template-columns: 1.4fr 1fr auto; align-items: center; } }
+
+      /* ============ ART-DIRECTED IMAGES ============ */
+      /* shared grade: a very soft navy/gold wash so every photo feels of one set */
+      .x-grade { position: relative; overflow: hidden; }
+      .x-grade > img { display: block; width: 100%; height: 100%; object-fit: cover; }
+      .x-grade::before {
+        content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+        background: linear-gradient(160deg, rgba(16, 29, 53, 0.16), rgba(184, 154, 94, 0.08) 60%, rgba(16, 29, 53, 0.22));
+      }
+      /* hero portrait */
+      .x-portrait__frame { box-shadow: 0 0 60px -18px rgba(201, 169, 110, 0.45); }
+      .x-portrait__frame img { object-position: 35% 40%; }
+      /* about visual */
+      .x-about__intro { display: grid; gap: 40px; align-items: center; }
+      .x-about__fig {
+        margin: 0; order: -1; width: 100%; aspect-ratio: 4 / 3; border-radius: var(--x-radius);
+        border: 1px solid rgba(184, 154, 94, 0.55); box-shadow: var(--x-shadow);
+      }
+      @media (min-width: 860px) {
+        .x-about__intro { grid-template-columns: 1.5fr 1fr; gap: 64px; }
+        .x-about__fig { order: 0; aspect-ratio: 4 / 5; border-radius: 999px 999px var(--x-radius) var(--x-radius); }
+      }
+      /* poetry intro backdrop, under the glow, grain and vignette */
+      .x-poetry__bg { position: absolute; inset: 0 0 auto 0; height: min(860px, 100%); z-index: -3; pointer-events: none; }
+      .x-poetry__bg img { width: 100%; height: 100%; object-fit: cover; object-position: 30% 50%; opacity: 0.55; }
+      .x-poetry__bg::after {
+        content: ""; position: absolute; inset: 0;
+        background:
+          radial-gradient(ellipse 60% 45% at 50% 16%, rgba(197, 165, 106, 0.2), transparent 70%),
+          linear-gradient(180deg, rgba(11, 20, 40, 0.72) 0%, rgba(11, 20, 40, 0.84) 45%, #0b1428 100%);
+      }
+      /* poetry empty state: an image header over the dashed card */
+      .x-pempty { padding: 0; overflow: hidden; }
+      .x-pempty__media { display: block; aspect-ratio: 3 / 1; position: relative; overflow: hidden; border-bottom: 1px solid var(--x-p-line); }
+      .x-pempty__media img { display: block; width: 100%; height: 100%; object-fit: cover; opacity: 0.7; }
+      .x-pempty__media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11, 20, 40, 0.25), rgba(11, 20, 40, 0.75)); }
+      .x-pempty__txt { display: block; padding: 32px 28px 40px; }
+      /* reading view: faint paper behind the header */
+      .x-reader__bg { position: absolute; top: 0; left: 0; right: 0; height: min(520px, 70vh); z-index: 0; pointer-events: none; overflow: hidden; }
+      .x-reader__bg img { width: 100%; height: 100%; object-fit: cover; opacity: 0.12; }
+      .x-reader__bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11, 20, 40, 0.55), #0b1428 95%); }
+      .x-reader__page, .x-reader__nav { position: relative; z-index: 1; }
+      .x-reader__bar { z-index: 2; }
+      /* work cards and modal */
+      .x-proj__media.x-grade { aspect-ratio: 3 / 2; display: block; background: var(--x-navy-3); }
+      .x-proj__media.x-grade > img { transition: transform 1.2s var(--x-ease); }
+      .x-proj:hover .x-proj__media.x-grade > img { transform: scale(1.04); }
+      .x-proj__media.x-grade::after { z-index: 2; }
+      .x-modal__media.x-grade { display: block; border-bottom: 1px solid rgba(184, 154, 94, 0.55); }
+      .x-imgbank { display: none; }
+
+      /* ============ REVEAL ON SCROLL ============ */
+      .x-reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.9s var(--x-ease), transform 0.9s var(--x-ease); }
+      .x-reveal.is-in { opacity: 1; transform: none; }
+      .x-d1 { transition-delay: 0.1s; } .x-d2 { transition-delay: 0.2s; } .x-d3 { transition-delay: 0.3s; }
+      .x-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+        *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; transition-delay: 0s !important; }
+        .x-reveal { opacity: 1; transform: none; }
+        .x-dust { display: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="x-skip" href="#main">رفتن به محتوا</a>
+
+    <!-- =========================================================
+         NAVIGATION (sticky) — order follows RTL: first item on the right
+         ========================================================= -->
+    <header class="x-nav" id="nav">
+      <div class="x-wrap x-nav__in">
+        <a class="x-brand" href="#home" aria-label="بازگشت به آغاز صفحه">
+          <span class="x-mono" data-cfg="initials">ر.خ</span>
+          <span class="x-brand__name" data-cfg="name">رضوانه سادات خدادادیان</span>
+        </a>
+        <button class="x-burger" id="burger" aria-label="گشودن منو" aria-expanded="false" aria-controls="menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav aria-label="منوی اصلی">
+          <ul class="x-menu" id="menu">
+            <li><a href="#home">خانه</a></li>
+            <li><a href="#about">درباره من</a></li>
+            <li><a href="#education">تحصیلات</a></li>
+            <li><a href="#skills">مهارت‌ها</a></li>
+            <li><a href="#poetry">شعر</a></li>
+            <li><a href="#projects">آثار</a></li>
+            <li><a href="#contact">تماس</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- =========================================================
+           01 · HOME / HERO  (navy)
+           ========================================================= -->
+      <section class="x-section x-dark x-hero" id="home" aria-labelledby="hero-title">
+        <div class="x-wrap x-hero__grid">
+          <div class="x-hero__copy">
+            <p class="x-eyebrow x-reveal">فضای شخصی · <span data-cfg="role">دانشجوی روان‌شناسی</span></p>
+            <h1 class="x-h1 x-reveal x-d1" id="hero-title">سلام، به <em>فضای شخصی من</em> خوش آمدید.</h1>
+            <p class="x-lead x-reveal x-d2" data-cfg="intro">دانشجوی روان‌شناسی، شاعر و نویسنده؛ کاوشگر ذهن و احساس انسان.</p>
+            <div class="x-hero__actions x-reveal x-d3">
+              <a class="x-btn x-btn--fill" href="#about">درباره من</a>
+              <a class="x-btn x-btn--ghost" href="#projects">آثار من را ببینید
+                <svg class="x-flip" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="x-portrait x-reveal x-d2">
+            <span class="x-portrait__ring" aria-hidden="true"></span>
+            <div class="x-portrait__frame x-grade" id="portrait">
+              <!-- PROFILE PHOTO — تصویر نمایه (the «ر.خ» monogram stays as the nav and footer logo) -->
+              <img src="profile.png" width="928" height="1152" fetchpriority="high" alt="تصویر هنری: بانویی با روسری، از پشت، کنار پنجره در فضایی ادبی" />
+            </div>
+            <svg class="x-portrait__star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0l1.6 10.4L24 12l-10.4 1.6L12 24l-1.6-10.4L0 12l10.4-1.6z"/></svg>
+          </div>
+        </div>
+        <a class="x-scroll" href="#about" aria-label="رفتن به درباره من">پیمایش<i aria-hidden="true"></i></a>
+      </section>
+
+      <!-- =========================================================
+           02 · ABOUT  (cream, paper texture)
+           ========================================================= -->
+      <section class="x-section x-light x-paper" id="about" aria-labelledby="about-title">
+        <div class="x-wrap x-about__grid">
+          <div class="x-about__intro">
+          <div class="x-about__bio">
+            <p class="x-eyebrow x-reveal">۰۱ — درباره من</p>
+            <h2 class="x-h2 x-reveal x-d1" id="about-title">اندکی <em>از آنچه هستم.</em></h2>
+            <div class="x-ornament x-reveal" style="margin-top: 28px" aria-hidden="true"><span></span></div>
+            <blockquote class="x-verse x-reveal x-d1">
+              <p><span class="x-qm" aria-hidden="true">«</span><span data-cfg="bio"></span><span class="x-qm" aria-hidden="true">»</span></p>
+            </blockquote>
+            <svg class="x-flourish x-reveal x-d2" viewBox="0 0 260 28" aria-hidden="true">
+              <path d="M258 14 C 222 2, 196 26, 160 14 S 104 3, 70 14 S 22 22, 2 12" />
+              <path class="x-flourish__gem" d="M130 7 l7 7 -7 7 -7 -7 z" />
+            </svg>
+          </div>
+          <figure class="x-about__fig x-grade x-reveal x-d2">
+            <img src="about.png" loading="lazy" alt="گوشه‌ای آرام برای خواندن و نوشتن" />
+          </figure>
+          </div>
+          <!-- rendered from CONFIG.facts (and CONFIG.goals, only when filled) -->
+          <div class="x-blocks" id="facts"></div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           03 · EDUCATION  (navy) — rendered from CONFIG.education
+           ========================================================= -->
+      <section class="x-section x-dark" id="education" aria-labelledby="edu-title">
+        <div class="x-wrap">
+          <div class="x-head">
+            <p class="x-eyebrow x-reveal">۰۲ — تحصیلات</p>
+            <h2 class="x-h2 x-reveal x-d1" id="edu-title">مسیری که <em>اندیشه‌ام را می‌سازد.</em></h2>
+          </div>
+          <ol class="x-tl" id="timeline"></ol>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           04 · SKILLS & INTERESTS  (cream) — rendered from CONFIG.skills
+           ========================================================= -->
+      <section class="x-section x-light" id="skills" aria-labelledby="skills-title">
+        <div class="x-wrap">
+          <div class="x-head">
+            <p class="x-eyebrow x-reveal">۰۳ — مهارت‌ها و علایق</p>
+            <h2 class="x-h2 x-reveal x-d1" id="skills-title">واژه، شعر و ذهن؛ <em>آنچه می‌کاوم.</em></h2>
+          </div>
+          <div class="x-skills" id="skillGrid"></div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           04 · POETRY «جهانِ واژه‌ها» (deep navy) — rendered from CONFIG.POEMS
+           ========================================================= -->
+      <section class="x-section x-poetry" id="poetry" aria-labelledby="poetry-title">
+        <div class="x-poetry__bg" aria-hidden="true"><img src="poetry.png" loading="lazy" alt="" /></div>
+        <div class="x-dust" id="dust" aria-hidden="true"></div>
+        <div class="x-wrap">
+          <div class="x-head">
+            <p class="x-eyebrow x-reveal">۰۴ — شعر</p>
+            <h2 class="x-h2 x-reveal x-d1" id="poetry-title">جهانِ واژه‌ها</h2>
+            <p class="x-reveal x-d2">جایی برای آنچه در کلمات جا می‌ماند...</p>
+            <svg class="x-porn x-reveal x-d3" viewBox="0 0 220 24" aria-hidden="true">
+              <path d="M2 12h82M136 12h82" /><path d="M110 3l9 9-9 9-9-9z" /><circle cx="92" cy="12" r="2" /><circle cx="128" cy="12" r="2" />
+            </svg>
+          </div>
+          <div class="x-pchips" id="poemChips" role="group" aria-label="دسته‌بندی شعرها" hidden></div>
+          <div class="x-pgrid" id="poemGrid"></div>
+          <p class="x-pempty x-reveal" id="poemEmpty" hidden><span class="x-pempty__media" aria-hidden="true"><img src="poem-card.png" loading="lazy" alt="" /></span><span class="x-pempty__txt">این دفتر هنوز در انتظار نخستین شعر است.</span></p>
+
+          <details class="x-pm" id="poemAdmin">
+            <summary>مدیریت اشعار</summary>
+            <div class="x-pm__body">
+              <p class="x-pm__note">تغییرات این بخش فقط تا پایان همین بازدید باقی می‌ماند. برای ثبت دائمی، شعرها را برای ویرایش سایت ارسال کنید.</p>
+              <form id="pmForm" novalidate>
+                <div class="x-row">
+                  <div class="x-field">
+                    <label for="pm-title">عنوان شعر</label>
+                    <input id="pm-title" type="text" required aria-describedby="pm-e-title" />
+                    <span class="x-err" id="pm-e-title" aria-live="polite"></span>
+                  </div>
+                  <div class="x-field">
+                    <label for="pm-cat">دسته (اختیاری)</label>
+                    <input id="pm-cat" type="text" list="pm-cats" autocomplete="off" />
+                    <datalist id="pm-cats"></datalist>
+                  </div>
+                </div>
+                <div class="x-field">
+                  <label for="pm-date">تاریخ (اختیاری)</label>
+                  <input id="pm-date" type="text" placeholder="مثلاً ۱۴۰۴/۰۲/۱۵" />
+                </div>
+                <div class="x-field">
+                  <label for="pm-text">متن شعر</label>
+                  <textarea id="pm-text" rows="9" required aria-describedby="pm-e-text"></textarea>
+                  <span class="x-err" id="pm-e-text" aria-live="polite"></span>
+                </div>
+                <div class="x-pm__actions">
+                  <button class="x-btn x-btn--fill x-btn--small" type="submit" id="pm-save">افزودن شعر</button>
+                  <button class="x-pm__btn" type="button" id="pm-cancel" hidden>انصراف از ویرایش</button>
+                </div>
+              </form>
+              <ul class="x-pm__list" id="pmList" aria-label="فهرست شعرها"></ul>
+              <div>
+                <button class="x-pm__btn" type="button" id="pm-export-btn" aria-expanded="false" aria-controls="pmExport">خروجی گرفتن</button>
+                <div class="x-pm__export" id="pmExport" hidden>
+                  <textarea id="pm-json" readonly dir="ltr" aria-label="خروجی JSON شعرها"></textarea>
+                  <div class="x-pm__actions" style="margin-top: 10px">
+                    <button class="x-pm__btn" type="button" id="pm-copy">رونوشت</button>
+                    <span id="pm-copy-msg" role="status" style="font-size: 13px; color: var(--x-cream-soft)"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           05 · WORKS  (navy) — rendered from CONFIG.projects
+           ========================================================= -->
+      <section class="x-section x-dark" id="projects" aria-labelledby="proj-title">
+        <div class="x-wrap">
+          <div class="x-head">
+            <p class="x-eyebrow x-reveal">۰۵ — آثار</p>
+            <h2 class="x-h2 x-reveal x-d1" id="proj-title">آثار و <em>نوشته‌ها</em></h2>
+            <p class="x-reveal x-d2">آنچه در ادامه می‌آید نمونه است و جای آثار واقعی را نگه می‌دارد.</p>
+          </div>
+          <!-- filter buttons are rendered from CONFIG.categories -->
+          <div class="x-filters x-reveal" role="group" aria-label="دسته‌بندی آثار" id="filters"></div>
+          <div class="x-grid" id="projGrid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           06 · CONTACT  (cream)
+           ========================================================= -->
+      <section class="x-section x-light" id="contact" aria-labelledby="contact-title">
+        <div class="x-wrap x-contact__grid">
+          <div class="x-contact__info">
+            <p class="x-eyebrow x-reveal">۰۶ — تماس</p>
+            <h2 class="x-h2 x-reveal x-d1" id="contact-title">تماس <em>با من</em></h2>
+            <p class="x-reveal x-d2" style="margin-top: 20px">پرسش، پیشنهاد همکاری یا تنها یک سلام؛ خوشحال می‌شوم از شما بشنوم.</p>
+            <a class="x-email x-link x-reveal x-d2" id="emailLink" dir="ltr" href="mailto:your.email@example.com">your.email@example.com</a>
+            <ul class="x-socials x-reveal x-d3" id="socials" aria-label="شبکه‌های اجتماعی"></ul>
+          </div>
+
+          <!--
+            CONTACT FORM
+            There is no backend, so a valid submission opens the visitor's mail client (mailto:).
+            Labels, errors and messages are in Persian; the email field is typed left-to-right.
+            To use Formspree instead: create a form at formspree.io, then set
+              CONFIG.formEndpoint = "https://formspree.io/f/yourFormId";
+            and the script will POST the form there (see sendForm() at the bottom).
+          -->
+          <form class="x-form x-reveal x-d1" id="contactForm" novalidate>
+            <div class="x-row">
+              <div class="x-field">
+                <label for="f-name">نام</label>
+                <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="e-name" />
+                <span class="x-err" id="e-name" aria-live="polite"></span>
+              </div>
+              <div class="x-field">
+                <label for="f-email">ایمیل</label>
+                <input id="f-email" name="email" type="email" dir="ltr" autocomplete="email" required aria-describedby="e-email" />
+                <span class="x-err" id="e-email" aria-live="polite"></span>
+              </div>
+            </div>
+            <div class="x-field">
+              <label for="f-subject">موضوع</label>
+              <input id="f-subject" name="subject" type="text" required aria-describedby="e-subject" />
+              <span class="x-err" id="e-subject" aria-live="polite"></span>
+            </div>
+            <div class="x-field">
+              <label for="f-message">پیام</label>
+              <textarea id="f-message" name="message" rows="5" required aria-describedby="e-message"></textarea>
+              <span class="x-err" id="e-message" aria-live="polite"></span>
+            </div>
+            <div>
+              <button class="x-btn x-btn--fill" type="submit">ارسال پیام
+                <svg class="x-flip" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12l16-8-6 16-2-7-8-1z"/></svg>
+              </button>
+            </div>
+            <div class="x-success" id="formSuccess" role="status" tabindex="-1">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-6"/></svg>
+              <p><strong>سپاسگزارم!</strong> <span id="successText">برنامه‌ی ایمیل شما با پیامی آماده‌ی ارسال گشوده می‌شود.</span></p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================================================
+         FOOTER  (navy)
+         ========================================================= -->
+    <footer class="x-dark x-foot" style="position: relative">
+      <div class="x-wrap">
+        <div class="x-foot__top">
+          <div>
+            <a class="x-brand" href="#home">
+              <span class="x-mono" data-cfg="initials">ر.خ</span>
+              <span class="x-brand__name" data-cfg="name">رضوانه سادات خدادادیان</span>
+            </a>
+            <p class="x-foot__tag" data-cfg="tagline">روان‌شناسی · شعر · نویسندگی</p>
+          </div>
+          <nav aria-label="پیوندهای پانویس">
+            <ul class="x-foot__nav">
+              <li><a class="x-link" href="#home">خانه</a></li>
+              <li><a class="x-link" href="#about">درباره من</a></li>
+              <li><a class="x-link" href="#education">تحصیلات</a></li>
+              <li><a class="x-link" href="#skills">مهارت‌ها</a></li>
+              <li><a class="x-link" href="#poetry">شعر</a></li>
+              <li><a class="x-link" href="#projects">آثار</a></li>
+              <li><a class="x-link" href="#contact">تماس</a></li>
+            </ul>
+          </nav>
+          <ul class="x-socials" id="footSocials" aria-label="شبکه‌های اجتماعی"></ul>
+        </div>
+        <div class="x-foot__bottom">
+          <p>© <span id="year">۱۴۰۴</span> <span data-cfg="name">رضوانه سادات خدادادیان</span>. همه حقوق محفوظ است.</p>
+          <button class="x-top" type="button" id="toTop">بازگشت به بالا
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <!-- work images, cloned into the cards and the modal by category -->
+    <div class="x-imgbank" aria-hidden="true">
+      <img data-img="نوشته" src="writing.png" loading="lazy" alt="میز تحریری کهنه با دست‌نوشته‌ها و چراغی برنجی" />
+      <img data-img="روان‌شناسی" src="psychology.png" loading="lazy" alt="سری شیشه‌ای با رشته‌های طلایی اندیشه بر کتاب‌های کهنه" />
+    </div>
+
+    <!-- =========================================================
+         PROJECT MODAL
+         ========================================================= -->
+    <div class="x-modal" id="modal" aria-hidden="true">
+      <div class="x-modal__box" role="dialog" aria-modal="true" aria-labelledby="m-title">
+        <button class="x-close" type="button" id="modalClose" aria-label="بستن جزئیات اثر">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+        <div class="x-modal__media" id="m-media"></div>
+        <div class="x-modal__body">
+          <p class="x-proj__cat" id="m-cat"></p>
+          <h3 class="x-h3" id="m-title"></h3>
+          <p id="m-desc"></p>
+          <ul class="x-tags" id="m-tags"></ul>
+          <div class="x-modal__links">
+            <a class="x-btn x-btn--fill x-btn--small" id="m-demo" href="#">خواندن اثر</a>
+            <a class="x-btn x-btn--ghost x-btn--small" id="m-code" href="#">بیشتر</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================================================
+         POEM READING VIEW (hash route #poem/<id>)
+         ========================================================= -->
+    <div class="x-reader" id="reader" role="dialog" aria-modal="true" aria-labelledby="r-title" hidden>
+      <div class="x-reader__bg" aria-hidden="true"><img src="poem-card.png" loading="lazy" alt="" /></div>
+      <div class="x-reader__bar">
+        <button class="x-btn x-btn--ghost x-btn--small" type="button" id="r-back">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          بازگشت
+        </button>
+        <p class="x-reader__count" id="r-count"></p>
+      </div>
+      <article class="x-reader__page">
+        <p class="x-reader__meta" id="r-meta"></p>
+        <h2 id="r-title"></h2>
+        <svg class="x-porn" viewBox="0 0 220 24" aria-hidden="true">
+          <path d="M2 12h82M136 12h82" /><path d="M110 3l9 9-9 9-9-9z" /><circle cx="92" cy="12" r="2" /><circle cx="128" cy="12" r="2" />
+        </svg>
+        <div class="x-reader__text" id="r-text"></div>
+      </article>
+      <nav class="x-reader__nav" id="r-nav" aria-label="شعرهای دیگر">
+        <button class="x-btn x-btn--ghost x-btn--small" type="button" id="r-prev">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          شعر قبلی
+        </button>
+        <button class="x-btn x-btn--ghost x-btn--small" type="button" id="r-next">
+          شعر بعدی
+          <svg class="x-flip" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+      </nav>
+    </div>
+
+    <script>
+      /* =========================================================================
+         CONFIG — محتوای سایت را اینجا ویرایش کنید
+         Everything personal on the page is rendered from this one object.
+         Empty strings ("") render nothing, so no placeholder text ever shows.
+         ========================================================================= */
+      var CONFIG = {
+        name: "رضوانه سادات خدادادیان",            // full name (nav, footer, © line, page title)
+        initials: "ر.خ",                            // monogram shown in the gold arch (nav, photo frame, footer)
+        role: "دانشجوی روان‌شناسی",                 // short role in the hero eyebrow
+        siteTitle: "روان‌شناسی، شعر و نویسندگی",     // page <title> = name | siteTitle
+        photo: "",                                  // e.g. "my-photo.jpg"; empty keeps the monogram placeholder
+        intro: "دانشجوی روان‌شناسی، شاعر و نویسنده؛ کاوشگر ذهن و احساس انسان.",
+        tagline: "روان‌شناسی · شعر · نویسندگی",       // footer tagline
+        // main literary bio passage (gold « » are added around it automatically)
+        bio: "واژه‌ها ابزار من‌اند و ذهن آدمی، سرزمینی که در آن کاوش می‌کنم. دانشجوی روان‌شناسی‌ام، شاعر و نویسنده — اینجا هرآنچه از انسان و احساس می‌دانم، به زبان هنر می‌نویسم.",
+        // the small info blocks under the bio
+        facts: [
+          { label: "رشته", value: "روان‌شناسی" },
+          { label: "جایگاه", value: "دانشجوی روان‌شناسی" },
+          { label: "علایق", value: "نویسندگی، شعر و ادبیات، روان‌شناسی" }
+        ],
+        goals: "",                                  // optional personal goals — renders an extra block ONLY when filled
+
+        // Poems for «جهانِ واژه‌ها» — empty by default. Each: { id, title, text, date?, category? }
+        // `text` keeps every line break; a blank line ("\n\n") makes a stanza gap.
+        // e.g. { id: "baran", title: "باران", text: "سطر یکم\nسطر دوم\n\nبند دوم", date: "1404/02/15", category: "غزل" }
+        POEMS: [
+  {
+    "id": "ba-didan-ruyat",
+    "title": "با دیدن رویت دل آیینه فرو ریخت",
+    "text": "با دیدن رویت دل آیینه فرو ریخت\nهرشیشه دلی طاقت دیدار ندارد\n\nبا آمدنت خنده سر آشوب لبم شد\nدیگر تن من یک دل بیمار ندارد\n\nچشمانت ازآن سوی سراپرده برون جَست  بی عشق تو حرفت ید تیمار ندارد\n\nازآتش قلبم لب شیرین سخنان سوخت\nدیگر شب شعرم رخ بیدار ندارد\n\nصبحی که قدومت سر راهم شد اِستاد\nآن روز چه روزی است که تکرار ندارد\n\nتک شعله فانوس به یادت شده روشن\nبعد از تو دگر گرمی بازار ندارد\n\nنامت شده رقعی که نخوانده نگرانم\nچون خواندمش این دل به تو اسرار ندارد",
+    "date": "",
+    "category": ""
+  },
+  {
+    "id": "sad-name",
+    "title": "صد نامه فرستادم",
+    "text": "صد نامه فرستادم صد راه نشان دادم\nیا راه نمیدانی یا نامه نمیخوانی\n\nدر معرکه خوبان حراج عشاق است\nبا عشق فروختم خود، دیگر نبود جانی\n\nاین قلب بر آشفته یاچشم چو دریاچه\nبر هیچ نیرزد هیچ این مهلکه فانی\n\nتاغنچه کند لیلی پژمرده شود مجنون\nاین نیزبگفتم چون من رفته و خودمانی\n\nافسرده شدم ای یار من پیر رُخت گشتم\nچون ارزش چشم تو بوداول و من ثانی",
+    "date": "",
+    "category": ""
+  },
+  {
+    "id": "del-az-man-bord",
+    "title": "دل از من برد و روی از من نهان کرد",
+    "text": "دل از من برد و روی از من نهان کرد\nخدایا با که این بازی توان کرد\n\nرفیقِ دلگشایم رفته آنسو\nو او این چهره را از من نهان کرد\n\nطبیبان وعده بیهوده دادند\nفقط او پیرِ این دل را جوان کرد\n\nمن از سوزِ سلامِ سرد او دیگر نگویم\nکه هرچه کرد با من چون بدان کرد\n\nدگر آتش درون قلب من خاموش گشته\nمرا رسوای پیر و این و آن کرد\n\nخدای!ا قلب من سوزان در آتش\nدگر او هم مرا انگشت نشان کرد\n\nمن از  بیگانگان دیگر ننالم\nکه با من بازی تیر و نشان کرد",
+    "date": "",
+    "category": ""
+  }
+],
+        email: "your.email@example.com",            // contact email (shown left-to-right)
+        formEndpoint: "",                           // optional: "https://formspree.io/f/yourFormId" to send via Formspree instead of mailto
+        yearCalendar: "persian",                    // © year: "persian" (e.g. ۱۴۰۴) or "gregorian" (e.g. ۲۰۲۵), both in Persian digits
+
+        // Social links — replace "#" with your profile URLs
+        socials: [
+          { name: "لینکدین", icon: "linkedin", url: "#" },
+          { name: "گیت‌هاب", icon: "github", url: "#" },
+          { name: "اینستاگرام", icon: "instagram", url: "#" },
+          { name: "ایکس (توییتر)", icon: "x", url: "#" }
+        ],
+
+        // Education timeline — newest first.
+        // university, years and notes are optional: each renders ONLY when filled.
+        education: [
+          { title: "دانشجوی روان‌شناسی", field: "رشته: روان‌شناسی", status: "در حال تحصیل", university: "", years: "", notes: "" }
+        ],
+
+        // Skills & interests — icon: "pen" | "quill" | "book" | "psych"
+        skills: [
+          { title: "نویسندگی", icon: "pen", text: "روایت انسان و احساس با زبان واژه‌ها." },
+          { title: "شعر و ادبیات", icon: "quill", text: "جست‌وجوی زیبایی و معنا در شعر و متن." },
+          { title: "روان‌شناسی", icon: "psych", text: "کاوش در ذهن، رفتار و جهان درونی انسان." }
+        ],
+
+        // Filter buttons for the works; each project's `category` must be one of these
+        allLabel: "همه",
+        categories: ["نوشته", "روان‌شناسی"],
+
+        // Works — samples only. Replace each with a real work: title, description, details, tags,
+        // and `read` / `more` links for the modal buttons («خواندن اثر» / «بیشتر»).
+        projects: [
+          { title: "نمونه — جستار ادبی", category: "نوشته", icon: "book", gradient: "x-g2", tags: ["جستار", "ادبیات"] },
+          { title: "نمونه — یادداشت روان‌شناسی", category: "روان‌شناسی", icon: "psych", gradient: "x-g3", tags: ["یادداشت", "روان‌شناسی"] }
+        ].map(function (p) {
+          p.description = p.description || "این یک نمونه است؛ آن را با اثر خود جایگزین کنید.";
+          p.details = p.details || "این یک نمونه است؛ آن را با اثر خود جایگزین کنید.";
+          p.read = p.read || "#";
+          p.more = p.more || "#";
+          return p;
+        })
+      };
+
+      /* =========================================================================
+         ICONS (minimal inline SVG line icons)
+         ========================================================================= */
+      var ICONS = {
+        pen: '<path d="M14.5 4.5l5 5L9 20H4v-5z"/><path d="M12.5 6.5l5 5M4 20l5.5-5.5"/>',
+        quill: '<path d="M20 3C11 4 6.5 9.5 5.5 19"/><path d="M20 3c-.5 7.5-5.5 12-12.5 12.5"/><path d="M10.5 12.5l4.5-4.5M3.5 21l2-2"/>',
+        book: '<path d="M12 6.5C10 5 7 4.5 3.5 5v13c3.5-.5 6.5 0 8.5 1.5 2-1.5 5-2 8.5-1.5V5C17 4.5 14 5 12 6.5z"/><path d="M12 6.5v13"/>',
+        psych: '<path d="M9 21v-3H7a2 2 0 0 1-2-2v-2.5L3 12l2-1.5C5 6 8.5 3 12.5 3A7.5 7.5 0 0 1 18 15.6V21"/><path d="M11 9.5a2 2 0 1 1 3 1.7c-.6.4-1 .9-1 1.6"/>',
+        linkedin: '<rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/>',
+        github: '<path d="M9 19c-4 1.3-4-2-6-2.5M15 21v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12 12 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/>',
+        instagram: '<rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/>',
+        x: '<path d="M4 4h4.5L20 20h-4.5zM19.5 4l-6.6 7.4M4.5 20l6.6-7.4"/>'
+      };
+      // a copy of the work image for a category, from the static image bank (null when none)
+      function workImg(cat) {
+        var bank = document.querySelectorAll(".x-imgbank img");
+        for (var k = 0; k < bank.length; k++) {
+          if (bank[k].getAttribute("data-img") === cat) return bank[k].cloneNode(true);
+        }
+        return null;
+      }
+      function icon(name) {
+        return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + (ICONS[name] || "") + "</svg>";
+      }
+      function esc(s) {
+        return String(s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; });
+      }
+      function $(sel, root) { return (root || document).querySelector(sel); }
+      function $$(sel, root) { return Array.prototype.slice.call((root || document).querySelectorAll(sel)); }
+      function tags(list) { return list.map(function (t) { return '<li class="x-tag">' + esc(t) + "</li>"; }).join(""); }
+      // Western digits → Persian digits (۰۱۲۳۴۵۶۷۸۹)
+      function toFa(s) { return String(s).replace(/[0-9]/g, function (d) { return "۰۱۲۳۴۵۶۷۸۹".charAt(d); }); }
+
+      /* =========================================================================
+         RENDER from CONFIG
+         ========================================================================= */
+      (function render() {
+        $$("[data-cfg]").forEach(function (el) {
+          var v = CONFIG[el.getAttribute("data-cfg")];
+          if (v != null) el.textContent = v;
+        });
+        document.title = CONFIG.name + " | " + CONFIG.siteTitle;
+
+        if (CONFIG.photo) {
+          $("#portrait").innerHTML = '<img src="' + esc(CONFIG.photo) + '" alt="تصویر ' + esc(CONFIG.name) + '" />';
+        }
+
+        // About: info blocks, plus goals only when filled
+        var facts = CONFIG.facts.slice();
+        if (CONFIG.goals) facts.push({ label: "اهداف", value: CONFIG.goals });
+        $("#facts").innerHTML = facts.map(function (f, i) {
+          return '<article class="x-card x-reveal x-d' + (i % 3 + 1) + '"><p class="x-card__label">' + esc(f.label) + '</p><p class="x-fact__val">' + esc(f.value) + "</p></article>";
+        }).join("");
+
+        // Education: university, years and notes render only when filled
+        $("#timeline").innerHTML = CONFIG.education.map(function (e) {
+          var when = [e.status, e.years ? toFa(e.years) : ""].filter(Boolean).join(" · ");
+          return '<li class="x-tl__item x-reveal"><span class="x-tl__dot" aria-hidden="true"></span><div class="x-tl__card">' +
+            (when ? '<p class="x-tl__when">' + esc(when) + "</p>" : "") +
+            '<h3 class="x-h3">' + esc(e.title) + "</h3>" +
+            (e.field ? '<p class="x-tl__deg">' + esc(e.field) + "</p>" : "") +
+            (e.university ? '<p class="x-tl__deg">' + esc(e.university) + "</p>" : "") +
+            (e.notes ? '<p class="x-tl__note">' + esc(e.notes) + "</p>" : "") +
+            "</div></li>";
+        }).join("");
+
+        $("#skillGrid").innerHTML = CONFIG.skills.map(function (s, i) {
+          return '<article class="x-card x-skill x-reveal x-d' + (i % 3 + 1) + '">' +
+            '<div class="x-skill__icon">' + icon(s.icon) + "</div>" +
+            '<h3 class="x-h3">' + esc(s.title) + "</h3><p>" + esc(s.text) + "</p>" +
+            '<span class="x-inkline" aria-hidden="true"></span></article>';
+        }).join("");
+
+        $("#filters").innerHTML = ['<button class="x-filter" type="button" data-filter="all" aria-pressed="true">' + esc(CONFIG.allLabel) + "</button>"]
+          .concat(CONFIG.categories.map(function (c) {
+            return '<button class="x-filter" type="button" data-filter="' + esc(c) + '" aria-pressed="false">' + esc(c) + "</button>";
+          })).join("");
+
+        $("#projGrid").innerHTML = CONFIG.projects.map(function (p, i) {
+          var hasImg = !!workImg(p.category);
+          return '<article class="x-proj x-reveal" data-cat="' + esc(p.category) + '">' +
+            (hasImg
+              ? '<div class="x-proj__media x-grade" data-media="' + i + '"></div>'
+              : '<div class="x-proj__media ' + esc(p.gradient) + '" role="img" aria-label="جای تصویر برای ' + esc(p.title) + '">' + icon(p.icon) + "</div>") +
+            '<div class="x-proj__body"><p class="x-proj__cat">' + esc(p.category) + '</p><h3 class="x-h3">' + esc(p.title) + "</h3>" +
+            "<p>" + esc(p.description) + '</p><ul class="x-tags">' + tags(p.tags) + "</ul>" +
+            '<div class="x-proj__foot"><button class="x-btn x-btn--ghost x-btn--small" type="button" data-open="' + i + '" aria-label="مشاهده جزئیات: ' + esc(p.title) + '">مشاهده جزئیات</button></div></div></article>';
+        }).join("");
+        $$("#projGrid [data-media]").forEach(function (el) {
+          el.appendChild(workImg(CONFIG.projects[+el.getAttribute("data-media")].category));
+        });
+
+        var emailA = $("#emailLink");
+        emailA.href = "mailto:" + CONFIG.email;
+        emailA.textContent = CONFIG.email;
+
+        var soc = CONFIG.socials.map(function (s) {
+          var ext = s.url && s.url !== "#" ? ' target="_blank" rel="noopener"' : "";
+          return '<li><a class="x-social" href="' + esc(s.url) + '"' + ext + ' aria-label="' + esc(s.name) + '">' + icon(s.icon) + "</a></li>";
+        }).join("");
+        $("#socials").innerHTML = soc;
+        $("#footSocials").innerHTML = soc;
+
+        // © year in Persian digits (Solar Hijri by default; see CONFIG.yearCalendar)
+        var yr = String(new Date().getFullYear());
+        if (CONFIG.yearCalendar === "persian") {
+          try { yr = new Intl.DateTimeFormat("fa-IR-u-ca-persian-nu-latn", { year: "numeric" }).format(new Date()).replace(/[^0-9]/g, "") || yr; } catch (err) {}
+        }
+        $("#year").textContent = toFa(yr);
+      })();
+
+      /* =========================================================================
+         BEHAVIOUR
+         ========================================================================= */
+      var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var nav = $("#nav"), menu = $("#menu"), burger = $("#burger");
+
+      // Placeholder links (href="#") don't jump to the top
+      document.addEventListener("click", function (e) {
+        var a = e.target.closest('a[href="#"]');
+        if (a) e.preventDefault();
+      });
+
+      // Smooth scroll with offset for the sticky nav
+      $$('a[href^="#"]').forEach(function (a) {
+        var id = a.getAttribute("href");
+        if (id.length < 2) return;
+        a.addEventListener("click", function (e) {
+          var target = document.querySelector(id);
+          if (!target) return;
+          e.preventDefault();
+          closeMenu();
+          var y = id === "#home" ? 0 : target.getBoundingClientRect().top + window.pageYOffset - nav.offsetHeight + 1;
+          window.scrollTo({ top: y, behavior: reduceMotion ? "auto" : "smooth" });
+          if (history.replaceState) history.replaceState(null, "", id);
+        });
+      });
+      $("#toTop").addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
+        if (history.replaceState) history.replaceState(null, "", "#home");
+        $(".x-brand").focus({ preventScroll: true });
+      });
+
+      // Mobile menu
+      function openMenu() {
+        menu.classList.add("is-open");
+        burger.setAttribute("aria-expanded", "true");
+        burger.setAttribute("aria-label", "بستن منو");
+        document.body.classList.add("x-lock");
+      }
+      function closeMenu() {
+        if (!menu.classList.contains("is-open")) return;
+        menu.classList.remove("is-open");
+        burger.setAttribute("aria-expanded", "false");
+        burger.setAttribute("aria-label", "گشودن منو");
+        document.body.classList.remove("x-lock");
+      }
+      burger.addEventListener("click", function () {
+        menu.classList.contains("is-open") ? closeMenu() : openMenu();
+      });
+      window.addEventListener("resize", function () { if (window.innerWidth >= 860) closeMenu(); });
+
+      // Nav: translucent on scroll + active link
+      var sections = $$("main section[id]");
+      var navLinks = $$(".x-menu a");
+      function onScroll() {
+        nav.classList.toggle("is-scrolled", window.pageYOffset > 20);
+        var pos = window.pageYOffset + nav.offsetHeight + window.innerHeight * 0.3;
+        var current = sections[0].id;
+        sections.forEach(function (s) { if (s.offsetTop <= pos) current = s.id; });
+        if (window.innerHeight + window.pageYOffset >= document.documentElement.scrollHeight - 4) current = sections[sections.length - 1].id;
+        navLinks.forEach(function (a) {
+          var on = a.getAttribute("href") === "#" + current;
+          a.classList.toggle("is-active", on);
+          if (on) a.setAttribute("aria-current", "true"); else a.removeAttribute("aria-current");
+        });
+      }
+      window.addEventListener("scroll", onScroll, { passive: true });
+      onScroll();
+
+      // Reveal on scroll (also draws the gold ink lines and the flourish)
+      function reveal(el) {
+        el.classList.add("is-in");
+      }
+      if ("IntersectionObserver" in window && !reduceMotion) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (en) {
+            if (en.isIntersecting) { reveal(en.target); io.unobserve(en.target); }
+          });
+        }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+        $$(".x-reveal").forEach(function (el) { io.observe(el); });
+      } else {
+        $$(".x-reveal").forEach(reveal);
+      }
+
+      // Project filters
+      $$(".x-filter").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var f = btn.getAttribute("data-filter");
+          $$(".x-filter").forEach(function (b) { b.setAttribute("aria-pressed", b === btn ? "true" : "false"); });
+          $$(".x-proj").forEach(function (card) {
+            var show = f === "all" || card.getAttribute("data-cat") === f;
+            card.hidden = !show;
+            card.classList.remove("is-entering");
+            if (show) { reveal(card); void card.offsetWidth; card.classList.add("is-entering"); }
+          });
+        });
+      });
+
+      // Project modal
+      var modal = $("#modal"), lastFocus = null;
+      function openModal(i) {
+        var p = CONFIG.projects[i];
+        var mImg = workImg(p.category);
+        if (mImg) {
+          $("#m-media").className = "x-modal__media x-grade";
+          $("#m-media").innerHTML = "";
+          mImg.removeAttribute("loading");
+          $("#m-media").appendChild(mImg);
+        } else {
+          $("#m-media").className = "x-modal__media " + p.gradient;
+          $("#m-media").innerHTML = icon(p.icon);
+        }
+        $("#m-cat").textContent = p.category;
+        $("#m-title").textContent = p.title;
+        $("#m-desc").textContent = p.details;
+        $("#m-tags").innerHTML = tags(p.tags);
+        $("#m-demo").href = p.read;
+        $("#m-code").href = p.more;
+        [["#m-demo", p.read], ["#m-code", p.more]].forEach(function (pair) {
+          var a = $(pair[0]);
+          if (pair[1] !== "#") { a.target = "_blank"; a.rel = "noopener"; } else { a.removeAttribute("target"); }
+        });
+        lastFocus = document.activeElement;
+        modal.classList.add("is-open");
+        modal.setAttribute("aria-hidden", "false");
+        document.body.classList.add("x-lock");
+        setTimeout(function () { $("#modalClose").focus(); }, 50);
+      }
+      function closeModal() {
+        if (!modal.classList.contains("is-open")) return;
+        modal.classList.remove("is-open");
+        modal.setAttribute("aria-hidden", "true");
+        document.body.classList.remove("x-lock");
+        if (lastFocus) lastFocus.focus();
+      }
+      $("#projGrid").addEventListener("click", function (e) {
+        var b = e.target.closest("[data-open]");
+        if (b) openModal(Number(b.getAttribute("data-open")));
+      });
+      $("#modalClose").addEventListener("click", closeModal);
+      modal.addEventListener("click", function (e) { if (e.target === modal) closeModal(); });
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") { closeModal(); closeMenu(); }
+        if (e.key === "Tab" && modal.classList.contains("is-open")) {
+          var f = $$("button, a[href]", modal);
+          var first = f[0], last = f[f.length - 1];
+          if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+          else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+        }
+      });
+
+      // Contact form: validation + mailto (or Formspree if CONFIG.formEndpoint is set)
+      var form = $("#contactForm");
+      var rules = {
+        name: function (v) { return v.length >= 2 ? "" : "لطفاً نام خود را بنویسید."; },
+        email: function (v) { return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v) ? "" : "لطفاً نشانی ایمیل معتبری وارد کنید."; },
+        subject: function (v) { return v.length >= 2 ? "" : "لطفاً موضوع پیام را بنویسید."; },
+        message: function (v) { return v.length >= 10 ? "" : "لطفاً پیامی دست‌کم ۱۰ نویسه‌ای بنویسید."; }
+      };
+      function check(field) {
+        var msg = rules[field.name](field.value.trim());
+        var wrap = field.closest(".x-field");
+        wrap.classList.toggle("has-error", !!msg);
+        field.setAttribute("aria-invalid", msg ? "true" : "false");
+        $(".x-err", wrap).textContent = msg;
+        return !msg;
+      }
+      Object.keys(rules).forEach(function (n) {
+        var f = form.elements[n];
+        f.addEventListener("blur", function () { if (f.value) check(f); });
+        f.addEventListener("input", function () { if (f.closest(".has-error")) check(f); });
+      });
+      function sendForm(data) {
+        if (CONFIG.formEndpoint) {
+          // Formspree (or similar): POST the form as JSON
+          return fetch(CONFIG.formEndpoint, { method: "POST", headers: { Accept: "application/json", "Content-Type": "application/json" }, body: JSON.stringify(data) })
+            .then(function (r) { if (!r.ok) throw new Error(); return "پیام شما فرستاده شد؛ به‌زودی پاسخ می‌دهم."; });
+        }
+        var body = data.message + "\n\n— " + data.name + " (" + data.email + ")";
+        window.location.href = "mailto:" + CONFIG.email + "?subject=" + encodeURIComponent(data.subject) + "&body=" + encodeURIComponent(body);
+        return Promise.resolve("برنامه‌ی ایمیل شما با پیامی آماده‌ی ارسال گشوده می‌شود.");
+      }
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var fields = Object.keys(rules).map(function (n) { return form.elements[n]; });
+        var ok = fields.map(check).every(Boolean);
+        var success = $("#formSuccess");
+        success.classList.remove("is-shown");
+        if (!ok) {
+          var bad = fields.filter(function (f) { return f.getAttribute("aria-invalid") === "true"; })[0];
+          if (bad) bad.focus();
+          return;
+        }
+        var data = {};
+        fields.forEach(function (f) { data[f.name] = f.value.trim(); });
+        sendForm(data).then(function (msg) {
+          success.querySelector("strong").textContent = "سپاسگزارم!";
+          $("#successText").textContent = msg;
+          success.classList.add("is-shown");
+          success.focus();
+          form.reset();
+        }).catch(function () {
+          success.querySelector("strong").textContent = "پوزش می‌خواهم.";
+          $("#successText").innerHTML = "مشکلی پیش آمد. لطفاً مستقیم به <bdi dir=\"ltr\">" + esc(CONFIG.email) + "</bdi> ایمیل بزنید.";
+          success.classList.add("is-shown");
+        });
+      });
+
+      /* =========================================================================
+         POETRY «جهانِ واژه‌ها»: cards, reading view (#poem/<id>), poems manager
+         ========================================================================= */
+      (function poetry() {
+        var KEY = "x-poems-visit-v2";
+        var poems = (CONFIG.POEMS || []).slice();
+        try {
+          var saved = sessionStorage.getItem(KEY);
+          if (saved) { var arr = JSON.parse(saved); if (Array.isArray(arr)) poems = arr; }
+        } catch (err) {}
+        function persist() { try { sessionStorage.setItem(KEY, JSON.stringify(poems)); } catch (err) {} }
+
+        var grid = $("#poemGrid"), chips = $("#poemChips"), empty = $("#poemEmpty"), activeCat = "all";
+        var reader = $("#reader"), isOpen = false, current = null, savedY = 0, fromPage = false;
+
+        // golden dust (skipped under reduced motion)
+        if (!reduceMotion) {
+          var dust = "";
+          for (var d = 0; d < 22; d++) {
+            dust += '<i style="left:' + (Math.random() * 100).toFixed(1) + "%;top:" + (15 + Math.random() * 85).toFixed(1) +
+              "%;--dx:" + Math.round(Math.random() * 60 - 30) + "px;animation-duration:" + (14 + Math.random() * 14).toFixed(1) +
+              "s;animation-delay:-" + (Math.random() * 20).toFixed(1) + "s;transform:scale(" + (0.5 + Math.random() * 0.8).toFixed(2) + ')"></i>';
+          }
+          $("#dust").innerHTML = dust;
+        }
+
+        function norm(t) { return String(t || "").replace(/\r\n?/g, "\n"); }
+        function cats() {
+          var out = [];
+          poems.forEach(function (p) { var c = String(p.category || "").trim(); if (c && out.indexOf(c) < 0) out.push(c); });
+          return out;
+        }
+        function excerpt(t) {
+          // the first two lines, exactly as written
+          var ls = norm(t).split("\n"), out = [];
+          for (var i = 0; i < ls.length && out.length < 2; i++) {
+            if (ls[i].trim()) out.push(ls[i]);
+          }
+          return out.join("\n");
+        }
+        function find(id) {
+          for (var i = 0; i < poems.length; i++) if (String(poems[i].id) === String(id)) return i;
+          return -1;
+        }
+        function href(p) { return "#poem/" + encodeURIComponent(p.id); }
+
+        function renderPoems() {
+          var cs = cats();
+          if (activeCat !== "all" && cs.indexOf(activeCat) < 0) activeCat = "all";
+          chips.hidden = cs.length < 2;
+          chips.innerHTML = cs.length < 2 ? "" : ["all"].concat(cs).map(function (c) {
+            return '<button class="x-pchip" type="button" data-pcat="' + esc(c) + '" aria-pressed="' + (c === activeCat) + '">' + esc(c === "all" ? "همه" : c) + "</button>";
+          }).join("");
+          var list = poems.filter(function (p) { return activeCat === "all" || String(p.category || "").trim() === activeCat; });
+          empty.hidden = poems.length > 0;
+          if (!poems.length) empty.classList.add("is-in");
+          grid.hidden = !poems.length;
+          grid.innerHTML = list.map(function (p, i) {
+            return '<a class="x-pcard" href="' + esc(href(p)) + '" data-id="' + esc(p.id) + '" style="animation-delay:' + Math.min(i, 8) * 70 + 'ms">' +
+              '<span class="x-pcard__top">' + (p.category ? '<span class="x-pcard__cat">' + esc(p.category) + "</span>" : "<span></span>") +
+              (p.date ? "<span>" + esc(toFa(p.date)) + "</span>" : "") + "</span>" +
+              "<h3>" + esc(p.title) + "</h3>" +
+              '<p class="x-pcard__ex">' + esc(excerpt(p.text)) + "</p>" +
+              '<span class="x-pcard__more">خواندن شعر ←</span></a>';
+          }).join("");
+          $("#pm-cats").innerHTML = cs.map(function (c) { return '<option value="' + esc(c) + '"></option>'; }).join("");
+          $("#pmList").innerHTML = poems.map(function (p) {
+            return '<li><span><b>' + esc(p.title) + "</b>" +
+              ([p.category, p.date ? toFa(p.date) : ""].filter(Boolean).length ? "<small>" + esc([p.category, p.date ? toFa(p.date) : ""].filter(Boolean).join(" · ")) + "</small>" : "") +
+              '</span><span class="x-pm__row"><button class="x-pm__btn" type="button" data-edit="' + esc(p.id) + '">ویرایش</button>' +
+              '<button class="x-pm__btn" type="button" data-del="' + esc(p.id) + '" aria-label="حذف ' + esc(p.title) + '">حذف</button></span></li>';
+          }).join("");
+          $("#pm-json").value = JSON.stringify(poems, null, 2);
+        }
+
+        chips.addEventListener("click", function (e) {
+          var b = e.target.closest("[data-pcat]");
+          if (!b) return;
+          activeCat = b.getAttribute("data-pcat");
+          renderPoems();
+        });
+        grid.addEventListener("click", function (e) {
+          if (e.target.closest(".x-pcard")) { fromPage = true; savedY = window.pageYOffset; }
+        });
+
+        /* ---- reading view ---- */
+        function fill(i) {
+          var p = poems[i];
+          current = p.id;
+          $("#r-meta").textContent = [p.category, p.date ? toFa(p.date) : ""].filter(Boolean).join(" · ");
+          $("#r-title").textContent = p.title;
+          $("#r-text").textContent = norm(p.text);
+          $("#r-count").textContent = "";
+          $("#r-nav").hidden = poems.length < 2;
+          $("#r-prev").disabled = i === 0;
+          $("#r-next").disabled = i === poems.length - 1;
+          document.title = p.title + " | " + CONFIG.name;
+        }
+        function openReader(i) {
+          fill(i);
+          if (!isOpen) {
+            if (!fromPage) {
+              savedY = window.pageYOffset;
+              if (savedY < 10) savedY = $("#poetry").offsetTop - nav.offsetHeight + 1;
+            }
+            isOpen = true;
+            reader.hidden = false;
+            document.body.classList.add("x-lock", "x-reading");
+            setTimeout(function () { $("#r-back").focus({ preventScroll: true }); }, 40);
+          }
+          reader.scrollTop = 0;
+        }
+        function closeReader() {
+          if (!isOpen) return;
+          var id = current;
+          isOpen = false; fromPage = false; current = null;
+          reader.hidden = true;
+          document.body.classList.remove("x-lock", "x-reading");
+          document.title = CONFIG.name + " | " + CONFIG.siteTitle;
+          try { window.scrollTo({ top: savedY, behavior: "instant" }); } catch (err) { window.scrollTo(0, savedY); }
+          var card = $$(".x-pcard", grid).filter(function (c) { return c.getAttribute("data-id") === String(id); })[0];
+          if (card) card.focus({ preventScroll: true });
+        }
+        function requestClose() {
+          if (fromPage) { history.back(); return; }
+          try { history.replaceState(null, "", "#poetry"); } catch (err) {}
+          closeReader();
+        }
+        function go(step) {
+          var i = find(current) + step;
+          if (i < 0 || i >= poems.length) return;
+          location.replace(href(poems[i]));
+        }
+        function route() {
+          var m = location.hash.match(/^#poem\/(.+)$/);
+          if (!m) { closeReader(); return; }
+          var id = m[1];
+          try { id = decodeURIComponent(id); } catch (err) {}
+          var i = find(id);
+          if (i < 0) { closeReader(); return; }
+          openReader(i);
+        }
+        window.addEventListener("hashchange", route);
+        $("#r-back").addEventListener("click", requestClose);
+        $("#r-prev").addEventListener("click", function () { go(-1); });
+        $("#r-next").addEventListener("click", function () { go(1); });
+        document.addEventListener("keydown", function (e) {
+          if (!isOpen) return;
+          if (e.key === "Escape") { e.preventDefault(); requestClose(); }
+          else if (e.key === "ArrowLeft" && !/INPUT|TEXTAREA/.test(e.target.tagName)) go(1);   // RTL: left = next
+          else if (e.key === "ArrowRight" && !/INPUT|TEXTAREA/.test(e.target.tagName)) go(-1); // RTL: right = previous
+          else if (e.key === "Tab") {
+            var f = $$("button:not([disabled])", reader).filter(function (b) { return b.offsetParent !== null; });
+            if (!f.length) return;
+            if (e.shiftKey && document.activeElement === f[0]) { e.preventDefault(); f[f.length - 1].focus(); }
+            else if (!e.shiftKey && document.activeElement === f[f.length - 1]) { e.preventDefault(); f[0].focus(); }
+          }
+        });
+
+        /* ---- poems manager ---- */
+        var pmForm = $("#pmForm"), editing = null;
+        var fTitle = $("#pm-title"), fCat = $("#pm-cat"), fDate = $("#pm-date"), fText = $("#pm-text");
+        function setErr(field, errEl, msg) {
+          field.closest(".x-field").classList.toggle("has-error", !!msg);
+          field.setAttribute("aria-invalid", msg ? "true" : "false");
+          $(errEl).textContent = msg;
+          return !msg;
+        }
+        function resetForm() {
+          editing = null;
+          pmForm.reset();
+          setErr(fTitle, "#pm-e-title", ""); setErr(fText, "#pm-e-text", "");
+          $("#pm-save").textContent = "افزودن شعر";
+          $("#pm-cancel").hidden = true;
+        }
+        pmForm.addEventListener("submit", function (e) {
+          e.preventDefault();
+          var title = fTitle.value.trim();
+          var text = norm(fText.value).replace(/^\s*\n/, "").replace(/\s+$/, "");
+          var ok = [setErr(fTitle, "#pm-e-title", title ? "" : "لطفاً عنوان شعر را بنویسید."),
+                    setErr(fText, "#pm-e-text", text.trim() ? "" : "لطفاً متن شعر را بنویسید.")];
+          if (!ok[0]) { fTitle.focus(); return; }
+          if (!ok[1]) { fText.focus(); return; }
+          var p = { id: editing || "poem-" + Date.now().toString(36) + Math.random().toString(36).slice(2, 5), title: title, text: text };
+          if (fDate.value.trim()) p.date = fDate.value.trim();
+          if (fCat.value.trim()) p.category = fCat.value.trim();
+          var at = editing ? find(editing) : -1;
+          if (at >= 0) poems[at] = p; else poems.push(p);
+          persist();
+          renderPoems();
+          if (isOpen) { var ci = find(current); if (ci >= 0) fill(ci); }
+          resetForm();
+        });
+        fTitle.addEventListener("input", function () { if (fTitle.closest(".has-error")) setErr(fTitle, "#pm-e-title", fTitle.value.trim() ? "" : "لطفاً عنوان شعر را بنویسید."); });
+        fText.addEventListener("input", function () { if (fText.closest(".has-error")) setErr(fText, "#pm-e-text", fText.value.trim() ? "" : "لطفاً متن شعر را بنویسید."); });
+        $("#pm-cancel").addEventListener("click", resetForm);
+        $("#pmList").addEventListener("click", function (e) {
+          var ed = e.target.closest("[data-edit]"), del = e.target.closest("[data-del]");
+          if (ed) {
+            var p = poems[find(ed.getAttribute("data-edit"))];
+            if (!p) return;
+            editing = p.id;
+            fTitle.value = p.title; fText.value = norm(p.text); fDate.value = p.date || ""; fCat.value = p.category || "";
+            $("#pm-save").textContent = "ذخیره‌ی ویرایش";
+            $("#pm-cancel").hidden = false;
+            fTitle.focus();
+          } else if (del) {
+            // two-step confirm: the first press asks, the second deletes
+            if (!del.hasAttribute("data-confirm")) {
+              del.setAttribute("data-confirm", "");
+              del.textContent = "حذف شود؟ دوباره بزنید";
+              setTimeout(function () { if (del.isConnected) { del.removeAttribute("data-confirm"); del.textContent = "حذف"; } }, 4000);
+              return;
+            }
+            var id = del.getAttribute("data-del"), i = find(id);
+            if (i < 0) return;
+            poems.splice(i, 1);
+            if (editing === id) resetForm();
+            persist();
+            renderPoems();
+            if (isOpen) {
+              if (String(current) === String(id)) { try { history.replaceState(null, "", "#poetry"); } catch (err) {} fromPage = false; closeReader(); }
+              else { var ci = find(current); if (ci >= 0) fill(ci); }
+            }
+          }
+        });
+        $("#pm-export-btn").addEventListener("click", function () {
+          var box = $("#pmExport"), show = box.hidden;
+          box.hidden = !show;
+          this.setAttribute("aria-expanded", String(show));
+          $("#pm-json").value = JSON.stringify(poems, null, 2);
+          $("#pm-copy-msg").textContent = "";
+        });
+        $("#pm-copy").addEventListener("click", function () {
+          var ta = $("#pm-json"), msg = $("#pm-copy-msg");
+          function fallback() {
+            try { ta.focus(); ta.select(); msg.textContent = document.execCommand("copy") ? "رونوشت شد." : "متن را انتخاب و دستی رونوشت کنید."; }
+            catch (err) { msg.textContent = "متن را انتخاب و دستی رونوشت کنید."; }
+          }
+          try {
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+              navigator.clipboard.writeText(ta.value).then(function () { msg.textContent = "رونوشت شد."; }, fallback);
+            } else fallback();
+          } catch (err) { fallback(); }
+        });
+
+        renderPoems();
+        route();
+      })();
+    </script>
+
+    <script src="hark.js"></script>
+  </body>
+</html>
